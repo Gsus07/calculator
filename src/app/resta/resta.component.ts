@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RestaComponent implements OnInit {
 
-  constructor() { }
+  numero1: number=0;
+numero2: number=0;
+resultado: number=0;
+constructor() { }
+ngOnInit(): void {
+}
+add(): void {
+this.resultado = this.numero1 - this.numero2;
 
-  ngOnInit(): void {
-  }
-
+}
 }
